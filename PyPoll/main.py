@@ -11,7 +11,7 @@ vote_percentages = []
 # Read data from CSV file
 with open(election_csv) as csvfile:
     csvreader = csv.reader(csvfile)
-    next(csvreader)  # Skip header row
+    header = next(csvreader)
 
     # Create dictionary to store vote counts for each candidate
     candidates = {}
